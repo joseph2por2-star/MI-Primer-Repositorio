@@ -97,7 +97,6 @@
 
 
 
-/* Botón de compra moderno */
 .alcarrito {
   background-color: #171240;
   font-weight: 600;
@@ -106,19 +105,26 @@
 
 }
 
-/* Efectos interactivos para el botón */
+
 .alcarrito:hover {
   background-color: #43379d;
 }
 
 
-/* Adaptabilidad para pantallas móviles (celulares) */
+
 @media (max-width: 768px) {
   .producto {
     flex-direction: column;
     margin: 16px;
     padding: 16px;
   }
+  .catalogo-tablas {
+    flex-direction: column;
+    margin: 16px;
+    padding: 16px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   
   .producto-info h1 {
     margin-top: 16px;
